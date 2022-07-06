@@ -14,11 +14,11 @@ class CardweatherHome extends StatelessWidget {
       ),
       margin: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        // image: const DecorationImage(
-        //   image: NetworkImage(
-        //     'https://t5z6q4c2.rocketcdn.me/wp-content/uploads/2020/08/sol-afinal-qual-e-sua-cor-conceitos-e-caracteristicas.jpg',
-        //   ),
-        // ),
+        image: const DecorationImage(
+          image: NetworkImage('assets/images/chuva.jpg'
+          
+          ),fit: BoxFit.fill,
+        ),
         color: Colors.white,
         borderRadius: BorderRadius.circular(30),
         boxShadow: [
