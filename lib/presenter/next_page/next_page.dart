@@ -14,6 +14,7 @@ class next_page extends StatelessWidget {
       body: Column(
         children: [
           Image.asset(imgBarber),
+          
           const Text(
             'Faço cabelos',
             style: TextStyle(

@@ -6,6 +6,7 @@ class ContainerPlayerMusic extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 60,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
 
@@ -46,6 +47,7 @@ class ContainerPlayerMusic extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(left: 70),
                   child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     mainAxisSize: MainAxisSize.max,
                     children: const [
                       Text(

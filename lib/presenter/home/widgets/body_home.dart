@@ -1,22 +1,35 @@
 import 'package:flutter/material.dart';
+
 import 'Container_router_home.dart';
 import 'card_weather_home.dart';
 import 'container_air_home.dart';
+import 'container_credit_card.dart';
 import 'container_fridge_home.dart';
 import 'container_lamp_home.dart';
 import 'container_player_music.dart';
 import 'list_text_horizontal.dart';
 
 class BodyHome extends StatelessWidget {
+  final String title;
+  final IconData icon;
+  final bool isOpened;
+  final Color colorBackground;
+
+
   const BodyHome({
     Key? key,
+    required this.title,
+    required this.icon,
+    required this.isOpened,
+    required this.colorBackground,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisAlignment: MainAxisAlignment.center,
+         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           SwitchListTile(
               title: const Text(
@@ -24,8 +37,8 @@ class BodyHome extends StatelessWidget {
               ),
               onChanged: (bool value) {},
               value: true),
-          const CardweatherHome(),
-          const ListTextHorizontal(),
+          // const CardweatherHome(),
+          // const ListTextHorizontal(),
           SizedBox(
             height: 40,
             child: ListView(
@@ -89,8 +102,8 @@ class BodyHome extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: const [
-              ContainerLampHome(),
-              ContainerRouterHome(),
+            //  ContainerLampHome(),
+            //   ContainerRouterHome(),
             ],
           ),
           const SizedBox(
@@ -99,14 +112,15 @@ class BodyHome extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: const [
-              ContainerAirHome(),
-              ContainerFridgeHome(),
+              // ContainerAirHome(),
+              // ContainerFridgeHome(),
             ],
           ),
           const SizedBox(
             height: 25,
           ),
-          const ContainerPlayerMusic(),
+          // const ContainerPlayerMusic(),
+          const containerCreditCard(),
         ],
       ),
     );

@@ -41,7 +41,7 @@ class CardweatherHome extends StatelessWidget {
               style: TextStyle(
                 fontSize: 15,
                 fontWeight: FontWeight.bold,
-                color: Colors.black,
+                color: Colors.white,
               ),
             ),
           ),
@@ -52,7 +52,7 @@ class CardweatherHome extends StatelessWidget {
                 padding: EdgeInsets.only(left: 10, bottom: 30),
                 child: Icon(
                   Icons.cloudy_snowing,
-                  color: Colors.black,
+                  color: Colors.white,
                   size: 30,
                 ),
               ),
@@ -60,8 +60,10 @@ class CardweatherHome extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.only(left: 0, bottom: 20),
                 child: Text(
-                  'Cloudy',
+                  'Rain',
                   style: TextStyle(
+                    color: Colors.white,
+
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
                   ),
@@ -79,6 +81,8 @@ class CardweatherHome extends StatelessWidget {
                   Text(
                     '26º',
                     style: TextStyle(
+                    color: Colors.white,
+
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
                     ),
@@ -88,7 +92,7 @@ class CardweatherHome extends StatelessWidget {
                     'Idoor temp',
                     style: TextStyle(
                       fontSize: 13,
-                      color: Colors.grey,
+                      color: Colors.white,
                     ),
                   ),
                 ],
@@ -99,6 +103,8 @@ class CardweatherHome extends StatelessWidget {
                   Text(
                     '18,2%',
                     style: TextStyle(
+                    color: Colors.white,
+
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
                     ),
@@ -108,7 +114,7 @@ class CardweatherHome extends StatelessWidget {
                     'Outdoor Humidity',
                     style: TextStyle(
                       fontSize: 13,
-                      color: Colors.grey,
+                      color: Colors.white,
                     ),
                   ),
                 ],
@@ -119,6 +125,7 @@ class CardweatherHome extends StatelessWidget {
                   Text(
                     '52,99%',
                     style: TextStyle(
+                    color: Colors.white,
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
                     ),
@@ -128,7 +135,7 @@ class CardweatherHome extends StatelessWidget {
                     'Idoor Humidity',
                     style: TextStyle(
                       fontSize: 13,
-                      color: Colors.grey,
+                      color: Colors.white,
                     ),
                   ),
                 ],

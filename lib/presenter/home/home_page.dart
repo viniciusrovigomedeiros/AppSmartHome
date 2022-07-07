@@ -25,8 +25,12 @@ class HomePage extends StatelessWidget {
           )
         ],
       ),
-      body: const BodyHome(),
+      body: const BodyHome(
+        colorBackground: Colors.black38,
+        icon: Icons.abc,
+        isOpened: true,
+        title: 'asd',
+      ),
     );
   }
 }
-
