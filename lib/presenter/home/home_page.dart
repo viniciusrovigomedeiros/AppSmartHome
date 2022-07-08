@@ -15,7 +15,7 @@ class HomePage extends StatelessWidget {
           IconButton(
             onPressed: () {
               Navigator.of(context).push(
-                MaterialPageRoute(builder: (context) => const next_page()),
+                MaterialPageRoute(builder: (context) => const nextPage()),
               );
             },
             icon: const Icon(
@@ -25,12 +25,7 @@ class HomePage extends StatelessWidget {
           )
         ],
       ),
-      body: const BodyHome(
-        colorBackground: Colors.black38,
-        icon: Icons.abc,
-        isOpened: true,
-        title: 'asd',
-      ),
+      body: BodyHome(),
     );
   }
 }

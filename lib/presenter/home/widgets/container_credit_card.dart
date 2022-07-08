@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'dart:math' as math;
 
+
+// ignore: camel_case_types
 class containerCreditCard extends StatelessWidget {
   const containerCreditCard({Key? key}) : super(key: key);
 
@@ -25,7 +28,7 @@ class containerCreditCard extends StatelessWidget {
         ],
       ),
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -58,11 +61,14 @@ class containerCreditCard extends StatelessWidget {
                   height: 60,
                   child: Image.asset('assets/images/chip.png'),
                 ),
-                const Icon(
-                  Icons.wifi,
-                  textDirection: TextDirection.ltr,
-                  color: Color.fromARGB(255, 158, 158, 158),
-                  size: 24,
+                Transform.rotate(
+                  angle: 90 * math.pi / 180,
+                  child: const Icon(
+                    Icons.wifi,
+                    textDirection: TextDirection.ltr,
+                    color: Color.fromARGB(255, 158, 158, 158),
+                    size: 24,
+                  ),
                 ),
               ],
             ),
@@ -70,7 +76,7 @@ class containerCreditCard extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 const Padding(
-                  padding: EdgeInsets.only(left: 10),
+                  padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                   child: Text(
                       'Vinícius R Medeiros',
                       style: TextStyle(
