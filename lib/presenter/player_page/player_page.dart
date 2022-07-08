@@ -1,21 +1,23 @@
+import 'package:app1/presenter/player_page/widgets/container_player_music.dart';
 import 'package:flutter/material.dart';
-import '../next_page/next_page.dart';
-import 'widgets/body_home.dart';
+import '../home/home_page.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+class playerPage extends StatelessWidget {
+  const playerPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+backgroundColor: Color.fromARGB(255, 61, 61, 61),      
       appBar: AppBar(
-        title: const Text('SmartHome'),
+        title: const Text('Player Music'),
         actions: [
           IconButton(
             onPressed: () {
               Navigator.of(context).push(
-                MaterialPageRoute(builder: (context) => const nextPage()),
+                MaterialPageRoute(builder: (context) => const HomePage()),
               );
+      
             },
             icon: const Icon(
               Icons.keyboard_arrow_right,
@@ -24,7 +26,7 @@ class HomePage extends StatelessWidget {
           )
         ],
       ),
-      body: BodyHome(),
+      body: const ContainerPlayerMusic(),
     );
   }
 }

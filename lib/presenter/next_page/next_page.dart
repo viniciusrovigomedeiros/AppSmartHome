@@ -1,5 +1,8 @@
+import 'package:app1/presenter/home/widgets/body_home.dart';
+import 'package:app1/presenter/player_page/player_page.dart';
 import 'package:flutter/material.dart';
 
+import '../home/home_page.dart';
 import '../home/widgets/container_credit_card.dart';
 
 class nextPage extends StatelessWidget {
@@ -9,8 +12,20 @@ class nextPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0,
+        title: const Text('AppTreino'),
+        actions: [
+          IconButton(
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => const playerPage()),
+              );
+            },
+            icon: const Icon(
+              Icons.keyboard_arrow_right,
+              size: 40,
+            ),
+          )
+        ],
       ),
       body: Column(
         children: const [
@@ -22,7 +37,6 @@ class nextPage extends StatelessWidget {
             ),
           ),
           containerCreditCard(),
-          
         ],
       ),
     );
